@@ -1,4 +1,5 @@
-#include "Disk.hpp"
+#include "../include/Disk.hpp" // Ajuste vital: ruta correcta
+#include <iostream>            // Ajuste vital: para usar std::cout y std::cerr
 #include <cmath>
 #include <stdexcept>
 

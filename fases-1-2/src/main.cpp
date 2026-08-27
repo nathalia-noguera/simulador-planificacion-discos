@@ -1,6 +1,8 @@
+#include "../include/Scheduler.hpp"
 #include <iostream>
-#include "Disk.hpp"
-#include "Request.hpp"
+#include "../include/Disk.hpp"
+#include "../include/Request.hpp"
+
 #ifdef _WIN32 // Para mostrar bien los acentos en consola (solo para Windows).
     #include <windows.h>
 #endif
@@ -61,5 +63,14 @@ int main(){
     std::cout << "\n";
     printRequests(requests);
     std::cout << "\n>>> FASE 2 FINALIZADA CORRECTAMENTE <<<\n";
+
+    // 4. Ejecutar FCFS de inmediato después de cargar los datos
+    if (!requests.empty()) {
+        std::cout << "\n>>> EJECUTANDO PLANIFICADOR FCFS AUTOMÁTICAMENTE <<<\n";
+        ejecutarFCFS(miDisk, requests);
+    }
+
+    std::cout << "\n>>> FASES COMPLETADAS CORRECTAMENTE (1-2-3)<<<\n";
+
     return 0;
 }
