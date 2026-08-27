@@ -1,0 +1,12 @@
+--- Resultados Algoritmo SCAN ---
+Visitando: 37 | Distancia: 13
+Visitando: 14 | Distancia: 23
+Visitando: 0 | Distancia: 14
+Visitando: 65 | Distancia: 65
+Visitando: 67 | Distancia: 2
+Visitando: 98 | Distancia: 31
+Visitando: 122 | Distancia: 24
+Visitando: 124 | Distancia: 2
+Visitando: 183 | Distancia: 59
+
+Tiempo total: 233 | Promedio: 29
