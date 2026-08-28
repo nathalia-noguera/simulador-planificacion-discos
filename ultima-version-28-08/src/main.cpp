@@ -1,5 +1,6 @@
 #include "../include/Scheduler.hpp"
 #include <iostream>
+#include <iomanip>      // justificar a la izq caracteres
 #include <fstream>
 #include <string>
 #include <limits>
@@ -292,13 +293,13 @@ int main(){
                         std::cout << "  M é t r i c a s   d e   R e n d i m i e n t o   ( F C F S   /   S C A N )\n";
                         std::cout << "\n";
                         std::cout << "-------------------------------------------------------------------------------\n";
-                        std::cout << "  Métrica                         |    FCFS     |    SCAN";
+                        std::cout << "  Métrica                         |    FCFS    |    SCAN";
                         std::cout << "\n-------------------------------------------------------------------------------\n";
-                        std::cout << "  Tiempo de búsqueda total (ms)   | " << resFCFS.tiempoTotalBusqueda << "\t\t| " << resSCAN.tiempoTotalBusqueda << "\n";
-                        std::cout << "  Latencia promedio (ms)          | " << resFCFS.latenciaPromedio << "\t\t| " << resSCAN.latenciaPromedio << "\n";
-                        std::cout << "  Tiempo de búsqueda máximo (ms)  | " << resFCFS.tiempoBusquedaMax << "\t\t| " << resSCAN.tiempoBusquedaMax << "\n";
-                        std::cout << "  Tiempo de búsqueda mínimo (ms)  | " << resFCFS.tiempoBusquedaMin << "\t\t| " << resSCAN.tiempoBusquedaMin << "\n";
-                        std::cout << "  Tiempo de acceso promedio (ms)  | " << resFCFS.tiempoAccesoPromedio << "\t\t| " << resSCAN.tiempoAccesoPromedio << "\n";
+                        std::cout << "  Tiempo de búsqueda total (ms)   | " << std::left << std::setw(11) << resFCFS.tiempoTotalBusqueda << "| " << resSCAN.tiempoTotalBusqueda << "\n";
+                        std::cout << "  Latencia promedio (ms)          | " << std::left << std::setw(11) << resFCFS.latenciaPromedio << "| " << resSCAN.latenciaPromedio << "\n";
+                        std::cout << "  Tiempo de búsqueda máximo (ms)  | " << std::left << std::setw(11) << resFCFS.tiempoBusquedaMax << "| " << resSCAN.tiempoBusquedaMax << "\n";
+                        std::cout << "  Tiempo de búsqueda mínimo (ms)  | " << std::left << std::setw(11) << resFCFS.tiempoBusquedaMin << "| " << resSCAN.tiempoBusquedaMin << "\n";
+                        std::cout << "  Tiempo de acceso promedio (ms)  | " << std::left << std::setw(11) << resFCFS.tiempoAccesoPromedio << "| " << resSCAN.tiempoAccesoPromedio << "\n";
                         std::cout << "-------------------------------------------------------------------------------\n";
                         
                         std::ofstream tabla("results/comparacion_resultados.txt");
@@ -310,13 +311,13 @@ int main(){
                         tabla << "  M é t r i c a s   d e   R e n d i m i e n t o   ( F C F S   /   S C A N )\n";
                         tabla << "\n";
                         tabla << "-------------------------------------------------------------------------------\n";
-                        tabla << "  Métrica                         |    FCFS     |    SCAN";
+                        tabla << "  Métrica                         |    FCFS    |    SCAN\n";
                         tabla << "-------------------------------------------------------------------------------\n";
-                        tabla << "  Tiempo de búsqueda total (ms)   | " << resFCFS.tiempoTotalBusqueda << "\t\t| " << resSCAN.tiempoTotalBusqueda << "\n";
-                        tabla << "  Latencia promedio (ms)          | " << resFCFS.latenciaPromedio << "\t\t| " << resSCAN.latenciaPromedio << "\n";
-                        tabla << "  Tiempo de búsqueda máximo (ms)  | " << resFCFS.tiempoBusquedaMax << "\t\t| " << resSCAN.tiempoBusquedaMax << "\n";
-                        tabla << "  Tiempo de búsqueda mínimo (ms)  | " << resFCFS.tiempoBusquedaMin << "\t\t| " << resSCAN.tiempoBusquedaMin << "\n";
-                        tabla << "  Tiempo de acceso promedio (ms)  | " << resFCFS.tiempoAccesoPromedio << "\t\t| " << resSCAN.tiempoAccesoPromedio << "\n";
+                        tabla << "  Tiempo de búsqueda total (ms)   | " << std::left << std::setw(11) << resFCFS.tiempoTotalBusqueda << "| " << resSCAN.tiempoTotalBusqueda << "\n";
+                        tabla << "  Latencia promedio (ms)          | " << std::left << std::setw(11) << resFCFS.latenciaPromedio << "| " << resSCAN.latenciaPromedio << "\n";
+                        tabla << "  Tiempo de búsqueda máximo (ms)  | " << std::left << std::setw(11) << resFCFS.tiempoBusquedaMax << "| " << resSCAN.tiempoBusquedaMax << "\n";
+                        tabla << "  Tiempo de búsqueda mínimo (ms)  | " << std::left << std::setw(11) << resFCFS.tiempoBusquedaMin << "| " << resSCAN.tiempoBusquedaMin << "\n";
+                        tabla << "  Tiempo de acceso promedio (ms)  | " << std::left << std::setw(11) << resFCFS.tiempoAccesoPromedio << "| " << resSCAN.tiempoAccesoPromedio << "\n";
                         tabla << "-------------------------------------------------------------------------------\n";
                         tabla.close();
                         

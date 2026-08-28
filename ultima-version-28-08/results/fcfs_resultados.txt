@@ -1,15 +1,20 @@
 
   R e s u l t a d o s   A l g o r i t m o   F C F S
 
-  Visitando cilindro: 70, Pista: 0, Distancia: 20, Tiempo de búsqueda: 20 ms, Tiempo de acceso acumulado: 20 ms
-  Visitando cilindro: 39, Pista: 3, Distancia: 31, Tiempo de búsqueda: 31 ms, Tiempo de acceso acumulado: 51 ms
-  Visitando cilindro: 180, Pista: 1, Distancia: 141, Tiempo de búsqueda: 141 ms, Tiempo de acceso acumulado: 192 ms
+  Visitando cilindro: 79, Pista: 1, Distancia: 29, Tiempo de búsqueda: 29 ms, Tiempo de acceso acumulado: 29 ms
+  Visitando cilindro: 10, Pista: 1, Distancia: 69, Tiempo de búsqueda: 69 ms, Tiempo de acceso acumulado: 98 ms
+  Visitando cilindro: 49, Pista: 1, Distancia: 39, Tiempo de búsqueda: 39 ms, Tiempo de acceso acumulado: 137 ms
+  Visitando cilindro: 18, Pista: 2, Distancia: 31, Tiempo de búsqueda: 31 ms, Tiempo de acceso acumulado: 168 ms
+  Visitando cilindro: 157, Pista: 3, Distancia: 139, Tiempo de búsqueda: 139 ms, Tiempo de acceso acumulado: 307 ms
+  Visitando cilindro: 111, Pista: 3, Distancia: 46, Tiempo de búsqueda: 46 ms, Tiempo de acceso acumulado: 353 ms
+  Visitando cilindro: 0, Pista: 2, Distancia: 111, Tiempo de búsqueda: 111 ms, Tiempo de acceso acumulado: 464 ms
+  Visitando cilindro: 71, Pista: 1, Distancia: 71, Tiempo de búsqueda: 71 ms, Tiempo de acceso acumulado: 535 ms
 
 
   M é t r i c a s   d e   r e n d i m i e n t o   ( F C F S )
 
-  Tiempo de búsqueda total:           192 ms
-  Latencia promedio (por solicitud):  64 ms
-  Tiempo de búsqueda máximo:          141 ms
-  Tiempo de búsqueda mínimo:          20 ms
-  Tiempo de acceso promedio:          87.6667 ms
+  Tiempo de búsqueda total:           535 ms
+  Latencia promedio (por solicitud):  66 ms
+  Tiempo de búsqueda máximo:          139 ms
+  Tiempo de búsqueda mínimo:          29 ms
+  Tiempo de acceso promedio:          261.375 ms

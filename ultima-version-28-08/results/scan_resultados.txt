@@ -1,16 +1,21 @@
 
   R e s u l t a d o s   A l g o r i t m o   S C A N
 
-  Visitando: 70, Pista: 0, Distancia: 20
-  Visitando: 180, Pista: 1, Distancia: 110
-  Visitando: 199, Pista: --, Distancia: 19
-  Visitando: 39, Pista: 3, Distancia: 160
+  Visitando: 71, Pista: 1, Distancia: 21
+  Visitando: 79, Pista: 1, Distancia: 8
+  Visitando: 111, Pista: 3, Distancia: 32
+  Visitando: 157, Pista: 3, Distancia: 46
+  Visitando: 199, Pista: --, Distancia: 42
+  Visitando: 49, Pista: 1, Distancia: 150
+  Visitando: 18, Pista: 2, Distancia: 31
+  Visitando: 10, Pista: 1, Distancia: 8
+  Visitando: 0, Pista: 2, Distancia: 10
 
 
   M é t r i c a s   d e   r e n d i m i e n t o   ( S C A N )
 
-  Tiempo de búsqueda total:           309 ms
-  Latencia promedio (por solicitud):  103 ms
-  Tiempo de búsqueda máximo:          160 ms
-  Tiempo de búsqueda mínimo:          20 ms
-  Tiempo de acceso promedio:          153 ms
+  Tiempo de búsqueda total:           348 ms
+  Latencia promedio (por solicitud):  43 ms
+  Tiempo de búsqueda máximo:          150 ms
+  Tiempo de búsqueda mínimo:          8 ms
+  Tiempo de acceso promedio:          191.625 ms

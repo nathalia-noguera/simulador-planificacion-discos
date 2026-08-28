@@ -4,10 +4,11 @@
   M é t r i c a s   d e   R e n d i m i e n t o   ( F C F S   /   S C A N )
 
 -------------------------------------------------------------------------------
-  Métrica                         |    FCFS     |    SCAN-------------------------------------------------------------------------------
-  Tiempo de búsqueda total (ms)   | 192		| 309
-  Latencia promedio (ms)          | 64		| 103
-  Tiempo de búsqueda máximo (ms)  | 141		| 160
-  Tiempo de búsqueda mínimo (ms)  | 20		| 20
-  Tiempo de acceso promedio (ms)  | 87.6667		| 153
+  Métrica                         |    FCFS    |    SCAN
+-------------------------------------------------------------------------------
+  Tiempo de búsqueda total (ms)   | 535        | 348
+  Latencia promedio (ms)          | 66         | 43
+  Tiempo de búsqueda máximo (ms)  | 139        | 150
+  Tiempo de búsqueda mínimo (ms)  | 29         | 8
+  Tiempo de acceso promedio (ms)  | 261.375    | 191.625
 -------------------------------------------------------------------------------

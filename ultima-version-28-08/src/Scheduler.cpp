@@ -2,7 +2,6 @@
 #include <iostream>
 #include <fstream>
 #include <cmath>
-<<<<<<< HEAD:ultima-version-28-08/src/Scheduler.cpp
 #include <algorithm>
 #include <unordered_map>
 
@@ -44,41 +43,11 @@ ResultadoAlgoritmo ejecutarFCFS(Disk disco, std::vector<Request> solicitudes){
         
         int distancia = std::abs(cilindroDestino - posicionBrazo);
         
-=======
-
-// Este algoritmo es O(n) porque recorre el arreglo de solicitudes una sola vez de forma lineal.
-void ejecutarFCFS(Disk disco, std::vector<Request> solicitudes) {
-    if (solicitudes.empty()) {
-        std::cout << "La lista de solicitudes está vacía." << std::endl;
-        return;
-    }
-
-    int tiempoTotal = 0;
-    
-    // CORRECCIÓN 1: Usamos tu función getter en inglés
-    int posicionBrazo = disco.getCurrentHeadPosition(); 
-    
-    std::ofstream archivo("results/fcfs_resultados.txt");
-    
-    std::cout << "\n--- Resultados Algoritmo FCFS ---" << std::endl;
-    archivo << "--- Resultados Algoritmo FCFS ---\n";
-
-    for (int i = 0; i < solicitudes.size(); i++) {
-        
-        // CORRECCIÓN 2: Aquí asumo que la variable en tu Request.hpp se llama "cylinder". 
-        // ¡Si se llama de otra forma, cámbiala en esta línea!
-        int cilindroDestino = solicitudes[i].cylinder; 
-        
-        int distancia = std::abs(cilindroDestino - posicionBrazo);
-        
-        // CORRECCIÓN 3: Usamos tu función getter en inglés
->>>>>>> a3adf3b69d996ed434f07d6cf8df2077dca11f49:fases-1-2/src/Scheduler.cpp
         int tiempoMovimiento = distancia * disco.getTimePerCylinder(); 
         
         tiempoTotal = tiempoTotal + tiempoMovimiento;
         posicionBrazo = cilindroDestino;
 
-<<<<<<< HEAD:ultima-version-28-08/src/Scheduler.cpp
         // Se actualizan las métricas con el resultado de este movimiento.
         if(tiempoMovimiento > tiempoBusquedaMax){
             tiempoBusquedaMax = tiempoMovimiento;
@@ -274,16 +243,4 @@ ResultadoAlgoritmo ejecutarSCAN(Disk disco, std::vector<Request> solicitudes, in
     resultado.numSolicitudesAtendidas = solicitudesReales;
 
     return resultado;
-=======
-        std::cout << "Visitando cilindro: " << cilindroDestino << " | Distancia: " << distancia << std::endl;
-        archivo << "Visitando cilindro: " << cilindroDestino << " | Distancia: " << distancia << "\n";
-    }
-
-    int tiempoPromedio = tiempoTotal / solicitudes.size();
-    
-    std::cout << "\nTiempo total: " << tiempoTotal << " | Promedio: " << tiempoPromedio << std::endl;
-    archivo << "\nTiempo total: " << tiempoTotal << " | Promedio: " << tiempoPromedio << "\n";
-    
-    archivo.close();
->>>>>>> a3adf3b69d996ed434f07d6cf8df2077dca11f49:fases-1-2/src/Scheduler.cpp
 }
