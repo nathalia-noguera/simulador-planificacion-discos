@@ -1,0 +1,11 @@
+--- Resultados Algoritmo FCFS ---
+Visitando cilindro: 98 | Distancia: 48
+Visitando cilindro: 183 | Distancia: 85
+Visitando cilindro: 37 | Distancia: 146
+Visitando cilindro: 122 | Distancia: 85
+Visitando cilindro: 14 | Distancia: 108
+Visitando cilindro: 124 | Distancia: 110
+Visitando cilindro: 65 | Distancia: 59
+Visitando cilindro: 67 | Distancia: 2
+
+Tiempo total: 643 | Promedio: 80

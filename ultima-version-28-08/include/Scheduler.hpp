@@ -2,6 +2,7 @@
 #define SCHEDULER_HPP
 
 #include <vector>
+<<<<<<< HEAD:ultima-version-28-08/include/Scheduler.hpp
 #include <string>
 #include "Disk.hpp"
 #include "Request.hpp"
@@ -24,5 +25,12 @@ ResultadoAlgoritmo ejecutarFCFS(Disk disco, std::vector<Request> solicitudes);
 
 // Función principal para el algoritmo del ascensor (SCAN)
 ResultadoAlgoritmo ejecutarSCAN(Disk disco, std::vector<Request> solicitudes, int direccion);
+=======
+#include "Disk.hpp"
+#include "Request.hpp"
+
+// Función principal para First-Come, First-Served
+void ejecutarFCFS(Disk disco, std::vector<Request> solicitudes);
+>>>>>>> a3adf3b69d996ed434f07d6cf8df2077dca11f49:fases-1-2/include/Scheduler.hpp
 
 #endif

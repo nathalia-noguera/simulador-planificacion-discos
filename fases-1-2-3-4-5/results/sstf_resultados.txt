@@ -1,0 +1,11 @@
+--- Resultados Algoritmo SSTF ---
+Visitando cilindro: 37 | Distancia: 13
+Visitando cilindro: 14 | Distancia: 23
+Visitando cilindro: 65 | Distancia: 51
+Visitando cilindro: 67 | Distancia: 2
+Visitando cilindro: 98 | Distancia: 31
+Visitando cilindro: 122 | Distancia: 24
+Visitando cilindro: 124 | Distancia: 2
+Visitando cilindro: 183 | Distancia: 59
+
+Tiempo total: 205 | Promedio: 25

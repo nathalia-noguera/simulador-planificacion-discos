@@ -1,0 +1,7 @@
+--- Resultados Algoritmo C-SCAN ---
+Visitando: 10 | Distancia: 5
+Visitando: 20 | Distancia: 10
+Visitando: 50 | Distancia: 30
+Visitando: 199 | Distancia: 149
+
+Tiempo total: 388 | Promedio: 97
