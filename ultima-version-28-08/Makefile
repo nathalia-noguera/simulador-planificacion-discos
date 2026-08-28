@@ -6,10 +6,14 @@ CXXFLAGS = -std=c++17 -Wall -Wextra -Iinclude
 TARGET = simulador
 
 # Archivos fuente necesarios para construir el programa
-SRC = src/main.cpp src/Disk.cpp
+SRC = src/main.cpp src/Disk.cpp src/Request.cpp src/Scheduler.cpp
 
 # Regla principal por defecto al ejecutar 'make'
-all: $(TARGET)
+all: results $(TARGET)
+
+# Regla para crear la carpeta results/ si no existe
+results:
+	mkdir -p results
 
 # Regla para compilar el ejecutable a partir de los fuentes y carpetas de inclusión
 $(TARGET): $(SRC)

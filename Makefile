@@ -1,17 +1,24 @@
+# Definir el compilador y los flags de compilación (C++17)
 CXX = g++
-CXXFLAGS = -std=c++17 -Wall -Iinclude
+CXXFLAGS = -std=c++17 -Wall -Wextra -Iinclude
 
-SRC = $(wildcard src/*.cpp)
-OBJ = $(SRC:.cpp=.o)
+# Nombre del ejecutable final
 TARGET = simulador
 
-all: $(TARGET)
+# Archivos fuente necesarios para construir el programa
+SRC = src/main.cpp src/Disk.cpp src/Request.cpp src/Scheduler.cpp
 
-$(TARGET): $(OBJ)
-	$(CXX) $(CXXFLAGS) -o $@ $^
+# Regla principal por defecto al ejecutar 'make'
+all: results $(TARGET)
 
-src/%.o: src/%.cpp
-	$(CXX) $(CXXFLAGS) -c $< -o $@
+# Regla para crear la carpeta results/ si no existe
+results:
+	mkdir -p results
 
+# Regla para compilar el ejecutable a partir de los fuentes y carpetas de inclusión
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) $(SRC) -o $(TARGET)
+
+# Regla para limpiar y borrar los archivos binarios generados
 clean:
-	rm -f src/*.o $(TARGET)
+	rm -f $(TARGET)
