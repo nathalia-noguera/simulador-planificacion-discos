@@ -1,0 +1,37 @@
+Actúa como un diseñador gráfico senior y experto en visualización de datos técnicos. Tu tarea es diseñar una infografía moderna y de alta calidad visual basada estrictamente en el siguiente contenido sobre el Simulador de Planificación de Discos (FCFS / SCAN):
+
+Título Principal: Simulador de Planificación de Discos: FCFS vs. SCAN (Optimización del rendimiento en sistemas de almacenamiento).
+
+Sección 1 (El Problema): Las solicitudes de acceso a datos atendidas de forma desordenada provocan desplazamientos largos e innecesarios del cabezal, generando demoras significativas, alta latencia y bajo aprovechamiento de los recursos de almacenamiento.
+
+Sección 2 (Objetivos del Simulador): Diseñar e implementar un modelo en C++ (C++17) para simular el comportamiento de un disco duro, comparar de forma cuantitativa el rendimiento de FCFS y SCAN, y calcular métricas clave como tiempo total de búsqueda y latencia promedio.
+
+Sección 3 (Algoritmos Evaluados):
+
+FCFS (First-Come, First-Served): Atiende solicitudes estrictamente en orden de llegada. Ventajas: simple, equitativo y sin inanición. Desventajas: cambios bruscos de dirección y rendimiento inferior por recorridos erráticos.
+
+SCAN (Algoritmo del Ascensor): Mueve el cabezal en una sola dirección, llega al extremo e invierte el sentido. Ventajas: reduce drásticamente el tiempo total de búsqueda y la latencia promedio (ideal con solicitudes dispersas). Desventajas: una solicitud recién llegada detrás del cabezal puede esperar a que este recorra todo el disco.
+
+Sección 4 (Métricas Clave de Rendimiento): Tiempo total de búsqueda, latencia promedio, tiempos máximo y mínimo, y secuencia de movimiento.
+
+Sección 5 (Conclusiones Principales): ¡SCAN es superior en la mayoría de escenarios! En pruebas clásicas, SCAN redujo el tiempo total de búsqueda de 535 ms a 348 ms y la latencia de 66 ms a 43 ms frente a FCFS, demostrando que la planificación de discos es un factor determinante en la eficiencia del almacenamiento secundario.
+
+Especificaciones de Diseño:
+
+Esquema de Color: Utiliza una paleta de colores vibrante y técnica. El fondo debe ser un azul oscuro profundo (casi medianoche). Los elementos principales (texto, iconos, líneas de gráfico) deben ser un azul claro eléctrico (cian) para los detalles técnicos, y un rojo intenso y brillante para las llamadas a la acción, los datos críticos, los puntos destacados y los acentos visuales.
+
+Tipografía: Emplea una fuente sans-serif moderna, geométrica y técnica (estilo "SF Pro", "Roboto" o "Ubuntu"). El texto debe ser blanco o azul claro sobre el fondo oscuro. Los títulos principales deben ser grandes, en negrita y pueden utilizar acentos en rojo.
+
+Estética Visual (Tech y Geométrica): El diseño debe ser limpio, con gran atención a la alineación y los espacios negativos (limpieza). Utiliza los siguientes elementos visuales para dar estructura y dinamismo:
+
+Líneas: Incorpora líneas de luz interconectadas y cuadrículas de puntos (efecto 'wireframe' o matriz digital) como fondo sutil para representar la tecnología. Usa líneas divisorias limpias en azul claro y rojo.
+
+Formas Geométricas: Emplea bloques de texto enmarcados con bordes luminosos (rectángulos y cuadrados), y botones o tarjetas con esquinas ligeramente redondeadas para separar secciones.
+
+Iconografía: Utiliza iconos lineales modernos y estilizados (outline style) para representar conceptos técnicos (algoritmos, servidores, archivos). Algunos iconos clave pueden estar rellenos de rojo para destacarlos.
+
+Jerarquía y Flujo: Estructura la información en secciones claras con títulos prominentes. Utiliza flechas y líneas de conexión direccionales para guiar al ojo a través de los procesos (ej. flujo de usuario o diagramas de bloques), empleando el color rojo para el flujo principal.
+
+Gráficos y Datos: Los gráficos de datos (barras, líneas, circulares) deben ser planos, con un estilo técnico, utilizando azul claro y rojo para las series de datos. Los puntos de datos críticos (como las métricas de FCFS vs SCAN) deben tener un brillo rojo.
+
+Fondo: El fondo debe tener una textura digital sutil, como un degradado de azul oscuro a negro, con superposiciones de patrones geométricos abstractos o 'ruido' digital ligero.
